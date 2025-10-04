@@ -1,0 +1,15 @@
+tensorflow==2.16.1
+tensorflow-io-gcs-filesystem==0.37.1
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+Pillow==10.4.0
+matplotlib==3.9.2
+
+pydrive2==1.20.0
+python-dotenv==1.0.1
+tqdm==4.66.5
+
+onnx==1.16.1
+onnxruntime==1.18.0
+tf2onnx==1.16.1
