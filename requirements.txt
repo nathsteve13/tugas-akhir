@@ -1,15 +1,18 @@
-tensorflow==2.16.1
-tensorflow-io-gcs-filesystem==0.37.1
-numpy==1.26.4
-pandas==2.2.2
-scikit-learn==1.5.1
-Pillow==10.4.0
-matplotlib==3.9.2
+# === Core ML stack ===
+# TensorFlow 2.16.x includes GPU support via pip on Linux/WSL2 (ensure NVIDIA driver installed on host)
+tensorflow==2.16.*
 
-pydrive2==1.20.0
-python-dotenv==1.0.1
-tqdm==4.66.5
+# Keras Tuner for LR search (works with Keras 3 bundled in TF 2.16)
+keras-tuner>=1.4.6,<1.5
 
-onnx==1.16.1
-onnxruntime==1.18.0
-tf2onnx==1.16.1
+# === Notebook environment ===
+jupyterlab>=4.0
+ipykernel>=6.29
+
+# === Utilities used in the notebook ===
+pydrive2>=1.20.0
+pillow>=10.3.0
+
+# (Optional, helpful in practice)
+matplotlib>=3.8
+numpy>=1.26
